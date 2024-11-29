@@ -1,37 +1,67 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
-    text-align: center;
+    color: #333;
+    line-height: 1.6;
 }
 
 header {
+    text-align: center;
+    padding: 20px;
     background-color: #333;
     color: white;
-    padding: 10px 0;
+}
+
+.profile {
+    margin-bottom: 20px;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
 }
 
 h1 {
-    margin: 0;
+    font-size: 2.5rem;
+    margin: 10px 0;
 }
 
-.video-container {
+.title {
+    font-size: 1.2rem;
+    color: #888;
+}
+
+section {
+    padding: 20px;
     margin: 20px;
-    display: inline-block;
-    text-align: center;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-video {
+h2 {
+    font-size: 1.8rem;
     margin-bottom: 10px;
 }
 
+ul {
+    list-style: none;
+}
+
 a {
+    color: #007BFF;
     text-decoration: none;
-    color: #4CAF50;
-    font-weight: bold;
 }
 
 a:hover {
-    color: #45a049;
+    text-decoration: underline;
 }
