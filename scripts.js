@@ -1,5 +1,9 @@
-document.querySelectorAll("a[download]").forEach(button => {
-    button.addEventListener("click", function() {
-        alert("Your download will begin soon!");
+// Smooth scroll effect for links (if you use anchor links for sections)
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
     });
 });
