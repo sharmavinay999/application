@@ -1,9 +1,9 @@
 /* For Download Button*/
-footer.container {
+.container {
     text-align: center;
 }
 
-footer.download-button {
+.download-button {
     background-color: #4CAF50; /* Green color */
     color: white;
     font-size: 16px;
@@ -14,19 +14,19 @@ footer.download-button {
     transition: background-color 0.3s ease;
 }
 
-footer.download-button:hover {
+.download-button:hover {
     background-color: #45a049; /* Darker green on hover */
 }
 
-footer.download-button:active {
+.download-button:active {
     background-color: #3e8e41; /* Even darker green when clicked */
 }
 
-footer.download-button:focus {
+.download-button:focus {
     outline: none; /* Remove focus outline */
 }
 
-footer.download-button1 {
+.download-button1 {
     background-color: #4CAF50; /* Green color */
     color: white;
     font-size: 16px;
@@ -37,20 +37,20 @@ footer.download-button1 {
     transition: background-color 0.3s ease;
 }
 
-footer.download-button1:hover {
+.download-button1:hover {
     background-color: #45a049; /* Darker green on hover */
 }
 
-footer.download-button1:active {
+.download-button1:active {
     background-color: #3e8e41; /* Even darker green when clicked */
 }
 
-footer.download-button1:focus {
+.download-button1:focus {
     outline: none; /* Remove focus outline */
 }
 
 
-footer.container p {
+.container p {
     font-size: 14px;
     color: #777;
 }
