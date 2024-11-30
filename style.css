@@ -167,11 +167,11 @@ h6{padding-top:10pt;color:#000000;font-weight:700;font-size:10pt;padding-bottom:
 
 
 /* For Download Button*/
-.container {
+footer.container {
     text-align: center;
 }
 
-.download-button {
+footer.download-button {
     background-color: #4CAF50; /* Green color */
     color: white;
     font-size: 16px;
@@ -182,19 +182,43 @@ h6{padding-top:10pt;color:#000000;font-weight:700;font-size:10pt;padding-bottom:
     transition: background-color 0.3s ease;
 }
 
-.download-button:hover {
+footer.download-button:hover {
     background-color: #45a049; /* Darker green on hover */
 }
 
-.download-button:active {
+footer.download-button:active {
     background-color: #3e8e41; /* Even darker green when clicked */
 }
 
-.download-button:focus {
+footer.download-button:focus {
     outline: none; /* Remove focus outline */
 }
 
-.container p {
+footer.download-button1 {
+    background-color: #4CAF50; /* Green color */
+    color: white;
+    font-size: 16px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+footer.download-button1:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+footer.download-button1:active {
+    background-color: #3e8e41; /* Even darker green when clicked */
+}
+
+footer.download-button1:focus {
+    outline: none; /* Remove focus outline */
+}
+
+
+footer.container p {
     font-size: 14px;
     color: #777;
 }
