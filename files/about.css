@@ -1,0 +1,283 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Logo Section */
+.logo-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.logo {
+    width: 150px; /* Adjust according to your logo's size */
+    height: auto;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.navbar .nav-links li {
+    margin: 0 15px;
+}
+
+.navbar .nav-links li a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+}
+
+.navbar .nav-links li a:hover {
+    background-color: #555;
+}
+
+/* Hamburger Menu */
+.menu-toggle {
+    display: none; /* Hide the checkbox */
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.menu-icon .bar {
+    width: 30px;
+    height: 4px;
+    background-color: white;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* Responsive Design for Smaller Screens */
+@media screen and (max-width: 768px) {
+    .main-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text-content {
+        max-width: 100%;
+        padding-right: 0;
+    }
+
+    .video-gallery {
+        max-width: 100%;
+        padding-top: 20px;
+    }
+
+    .navbar .nav-links {
+        display: none; /* Hide the navigation links by default */
+        width: 100%;
+        text-align: center;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding-top: 20px;
+    }
+
+    .navbar .nav-links li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .navbar .nav-links li a {
+        padding: 10px;
+    }
+
+    .menu-icon {
+        display: flex;
+    }
+
+    /* When the checkbox is checked, show the navigation links */
+    .menu-toggle:checked + .menu-icon + .nav-links {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .navbar .nav-links li a {
+        padding: 8px 10px;
+    }
+
+    .logo {
+        width: 120px; /* Adjust for smaller screens */
+    }
+
+    .text-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .text-content p {
+        font-size: 0.9rem;
+    }
+
+    .video-item video {
+        width: 90%;
+    }
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-left: 20px; /* Padding to create space on the left side */
+}
+
+.profile {
+    margin-right: 20px; /* Space between image and name */
+}
+
+.profile-img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.name-container {
+    text-align: left; /* Align name to the left */
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 5px;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+/* Layout for Main Content (Aside and Main) */
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Ensure content stacks on smaller screens */
+}
+
+aside {
+    width: 30%;
+    padding-left: 20px;
+}
+
+main {
+    width: 65%;
+}
+
+/* Styling for Sections */
+ul {
+    list-style: none;
+}
+
+ul li {
+    margin: 8px 0;
+}
+
+/* Footer Styling */
+footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+footer button {
+    padding: 10px 20px;
+    font-size: 1.1em;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+footer button:hover {
+    background-color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    /* Stack the aside and main content on smaller screens */
+    .main-content {
+        flex-direction: column;
+        align-items: center;  /* Center content in mobile view */
+    }
+
+    aside {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    .profile-img {
+        width: 180px;
+        height: 180px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1.1em;
+    }
+
+    footer button {
+        width: 100%;
+        padding: 12px;
+    }
+}
+
+@media (min-width: 1024px) {
+    h1 {
+        font-size: 2.8em;
+    }
+
+    p {
+        font-size: 1.3em;
+    }
+
+    footer button {
+        font-size: 1.2em;
+    }
+}
