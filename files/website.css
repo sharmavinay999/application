@@ -186,6 +186,9 @@ footer {
         display: flex;
         
     }
+    .video-item video {
+        width: 75%;
+    }
 
     /* When the checkbox is checked, show the navigation links */
     .menu-toggle:checked + .menu-icon + .nav-links {
@@ -211,6 +214,6 @@ footer {
     }
 
     .video-item video {
-        width: 90%;
+        width: 75%;
     }
 }
