@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VINAY KUMAR SHARMA</title>
+    <link rel="stylesheet" href="files/about.css">
+</head>
+<body>
+
+    <!-- Logo Section -->
+    <div class="logo-container">
+        <img src="file2/logo.png" alt="Logo" class="logo">
+    </div>
+
+    <!-- Navigation Bar (with Hamburger menu for small screens) -->
+    <nav class="navbar">
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </label>
+        
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <!-- Header Section with Profile Picture on the Left -->
+        <header>
+            <div class="profile">
+                <img src="file2/your-photo.jpg" alt="Your Photo" class="profile-img">
+            </div>
+            <div class="name-container">
+                <h1>VINAY KUMAR SHARMA</h1>
+                <p>Software Engg.</p>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Main Body: Education, Work Experience, and Projects -->
+            <main>
+                <section class="education">
+                    <h2>Education</h2><br>
+                    <p style="text-indent: 30px;">Master's in Mathematics With Computer Science, I.G.U Meerpur, 2024</p><br>
+                    <p style="text-indent: 30px;">B.A, INDRA GANDHI UNIVERSITY, 2020</p><br>
+                    <p style="text-indent: 30px;">12th, HBSE, 2017</p><br>
+                    <p style="text-indent: 30px;">10th, HBSE, 2015</p><br>
+                    <!-- Add more education details if necessary -->
+                </section>
+
+                <section class="projects">
+                    <h2>Projects</h2><br>
+                    <div class="project">
+                        <h3>PXE SERVER</h3><br>
+                        <p style="text-indent: 30px;">&nbsp;&nbsp;&nbsp;&nbsp;To install the OS into the cpu's our team of three person made pxe server. It was ruuning over ubuntu 24.4 and we have to install diffrent version, we also made automatic Preseed file to automate the boot process over the network.</p>
+                    </div><br>
+                    <!-- Add more projects here -->
+                </section>
+                
+                <section class="experience">
+                    <h2>Work Experience</h2><br>
+                    <div class="job">
+                        <h3>Installation Engg. - Inxee System Solution</h3>
+                        <p>Oct 2024 - Apr 2025</p><br>
+                        <ul>
+                            <li style="text-indent: 30px;">Developed Python applications using pyQt.</li>
+                            <li style="text-indent: 30px;">Worked on some basics of network setup and Bash scripting and services.</li>
+                            <li style="text-indent: 30px;">Configration of the Embrded system compontes like raider , camara and cpu with liniux OS.</li>
+                            
+                        </ul>
+                    </div><br>
+                    <!-- Add more job experiences here -->
+                </section>
+            </main>
+
+            <!-- Aside: Contact Info, Skills, and Hobbies -->
+            <aside>
+                <section class="contact">
+                    <h2>Contact Information</h2>
+                    <ul>
+                        <li>Email: sharmavinaykumar666@gmail.com</li>
+                        <li>Phone: +91 9671462667</li>
+                        <li>Website: https://sharmavinay999.github.io/application/</li>
+                        <li>LinkedIn: https://www.linkedin.com/in/vinay-kumar-sharma-5bba05326</li>
+                    </ul>
+                </section><br>
+
+                <section class="skills">
+                    <h2>Skills</h2>
+                    <ul>
+                        <li>Python, MYSQL, C++, Bash, Linux, </li>
+                        <li>HTML5, CSS3, JavaScript</li>
+                        <li>Git, GitHub, Networking, Nmap, Wireshark, </li>
+                    </ul>
+                </section><br>
+
+                <section class="hobbies">
+                    <h2>Hobbies</h2>
+                    <ul>
+                        <li>Reading Books</li>
+                        <li>Traveling</li>
+                        <li>Surffing Internet</li>
+                        <li>Music</li>
+                    </ul>
+                </section><br>
+            </aside>
+        </div>
+
+        <!-- Footer with Download Button -->
+        
+            <button onclick="downloadResume()">Download Resume </button>
+            <button onclick="downloadResumeS()">Download Resume Simple</button>
+        
+    </div>
+
+    <script>
+        function downloadResume() {
+            window.location.href = '/doc/resume.pdf';  // Replace with your resume file
+        }
+        function downloadResumeS() {
+            window.location.href = '/doc/resume1.pdf';  // Replace with your resume file
+        }
+    </script>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024-25 <b>RAAVAN </b>, All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
