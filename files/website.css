@@ -111,7 +111,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    color: aliceblue;
+    color: white;
 }
 
 .video-item {
