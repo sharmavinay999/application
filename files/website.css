@@ -8,28 +8,36 @@
 /* Body Styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #5e5e5e;
+    background-image: url("/file2/hbg.jpeg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 /* Logo Section */
 .logo-container {
     text-align: center;
-    padding: 20px;
+    padding: 5px;
 }
 
 .logo {
-    width: 150px; /* Adjust according to your logo's size */
+    width: 48px; /* Adjust according to your logo's size */
     height: auto;
 }
 
+
 /* Navigation Bar */
 .navbar {
-    background-color: #333;
+    /*background-color: #333;*/
+    backdrop-filter: blur(5px);
+    box-shadow: 0px 0px opx rgba(76, 77, 92, 0.37);
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
     padding: 10px 20px;
+    position: relative;
 }
 
 .navbar .nav-links {
@@ -83,6 +91,7 @@ body {
     flex: 1;
     max-width: 60%;
     padding-right: 20px;
+    color: aliceblue;
 }
 
 .text-content h1 {
@@ -154,13 +163,12 @@ footer {
 
     .navbar .nav-links {
         display: none; /* Hide the navigation links by default */
-        width: 100%;
-        text-align: center;
-        background-color: #333;
-        position: absolute;
-        top: 60px;
+        text-align: left;
+        backdrop-filter: blur(5px);
+        position: bottom;
+        top: 40px;
         left: 0;
-        padding-top: 20px;
+        padding-top: 5px;
     }
 
     .navbar .nav-links li {
@@ -174,6 +182,7 @@ footer {
 
     .menu-icon {
         display: flex;
+        
     }
 
     /* When the checkbox is checked, show the navigation links */
@@ -188,7 +197,7 @@ footer {
     }
 
     .logo {
-        width: 120px; /* Adjust for smaller screens */
+        width: 32px; /* Adjust for smaller screens */
     }
 
     .text-content h1 {
