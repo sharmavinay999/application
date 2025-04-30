@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VINAY KUMAR SHARMA</title>
     <link rel="stylesheet" href="files/about.css">
+    <style>
+        body{
+            background-image: url("hbg.jpeg");
+        }
+        
+       </style>
 </head>
 <body>
 
@@ -122,10 +128,18 @@
 
     <script>
         function downloadResume() {
-            window.location.href = '/doc/resume.pdf';  // Replace with your resume file
-        }
+      // Replace with your actual PDF file path
+      const fileUrl = 'doc/resume.pdf'; 
+
+      const link = document.createElement('a');
+      link.href = fileUrl;
+      link.download = 'My-File.pdf'; // Optional: sets a custom name for the download
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
         function downloadResumeS() {
-            window.location.href = '/doc/resume1.pdf';  // Replace with your resume file
+            window.location.href = 'doc/resume1.pdf';  // Replace with your resume file
         }
     </script>
 
